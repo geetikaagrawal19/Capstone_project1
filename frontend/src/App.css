@@ -1,0 +1,49 @@
+/* Default light mode */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --button-background: #61dafb;
+  --button-text: #000;
+}
+
+/* Dark mode */
+body.dark {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --button-background: #bb86fc;
+  --button-text: #000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--button-background);
+  color: var(--button-text);
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}

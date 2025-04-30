@@ -1,0 +1,37 @@
+
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5001"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/detectifai
+    depends_on:
+      - mongo
+    volumes:
+      - .:/app
+    restart: always
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    restart: always
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express
+    ports:
+      - "8081:8081"
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongo
+      - ME_CONFIG_MONGODB_PORT=27017
+    depends_on:
+      - mongo
+    restart: always
+
+volumes:
+  mongo-data:

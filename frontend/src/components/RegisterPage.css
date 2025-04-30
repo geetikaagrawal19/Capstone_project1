@@ -1,0 +1,150 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Container */
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .register-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Form */
+  .register-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Inputs */
+  .register-form input {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .register-form input:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  /* Button */
+  .register-form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #03045E;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-form button:hover {
+    background-color: #03045E;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  /* Redirect Link */
+  .redirect-login {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .redirect-login a {
+    color: #03045E;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .redirect-login a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Login Buttons */
+  .social-login {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .google-btn,
+  .github-btn {
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Google button */
+  .google-btn {
+    background-color: #db4437 !important;
+  }
+  
+  .google-btn:hover {
+    background-color: #c53727 !important;
+  }
+  
+  /* GitHub button */
+  .github-btn {
+    background-color: #333333 !important;
+  }
+  
+  .github-btn:hover {
+    background-color: #222222 !important;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .register-form input {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    .register-form button,
+    .google-btn,
+    .github-btn {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }
+  

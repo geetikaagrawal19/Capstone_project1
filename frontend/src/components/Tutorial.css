@@ -1,0 +1,102 @@
+.tutorial-page {
+    display: flex;
+    padding: 20px;
+    background-color: #f2f2f2;
+    min-height: 80vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #b2ebf2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .sidebar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #eeeeee;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .sidebar button:hover,
+  .sidebar button.active {
+    background-color: #00acc1;
+    color: white;
+  }
+  
+  .tutorial-content {
+    flex: 1;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tutorial-content h2 {
+    margin-bottom: 20px;
+    color: #004d40;
+  }
+  
+  .tutorial-buttons {
+    margin-top: 30px;
+  }
+  
+  .tutorial-buttons button {
+    margin-right: 15px;
+    padding: 10px 20px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .tutorial-buttons button:hover {
+    background-color: #00695c;
+  }
+
+.action-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.action-buttons button {
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.action-buttons button:hover {
+  background-color: #004d40;
+}
+  .analyze-button,
+  .video-btn{
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #03045E;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .analyze-button:hover,
+  .video-btn:hover {
+    background-color: #03045E;
+  }

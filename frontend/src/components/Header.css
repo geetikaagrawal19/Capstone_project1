@@ -1,0 +1,123 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  background-color: #03045E;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 70px;
+  width: 100%;
+  position: relative;
+}
+
+.logo img, .logo-image {
+  height: 90px;
+  padding: 1rem;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #ADE8F4;
+  transform: scale(1.05);
+}
+
+/* 👇 This is the important one */
+.nav-link.active {
+  color: #ADE8F4;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px; /* Same as header height */
+  width: 80px; /* You can adjust */
+  cursor: pointer;
+  position: relative;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation on profile image */
+.profile-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #ADE8F4;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #ffffff;
+  color: #03045E;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.username {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.logout-button {
+  background-color: #03045E;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.logout-button:hover {
+  background-color: #023E8A;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}

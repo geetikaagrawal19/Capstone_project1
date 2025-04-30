@@ -1,0 +1,47 @@
+.analyze-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #f0f8ff; /* Light bluish */
+    min-height: 80vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .analyze-title {
+    font-size: 2.5rem;
+    color: #003366; /* Dark Blue */
+    margin-bottom: 2rem;
+  }
+  
+  .analyze-card {
+    background-color: #d0efff; /* Card color */
+    padding: 2rem;
+    border-radius: 12px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  .analyze-text {
+    font-size: 1.2rem;
+    color: #003366;
+    margin-bottom: 2rem;
+  }
+  
+  .analyze-button {
+    padding: 0.8rem 2rem;
+    background-color: #003366; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .analyze-button:hover {
+    background-color: #001d4d;
+  }
+  
